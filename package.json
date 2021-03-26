@@ -1,0 +1,31 @@
+{
+  "name": "wab92saga",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "cookie-parser": "~1.4.4",
+    "debug": "^4.3.1",
+    "express": "^4.17.1",
+    "http-errors": "^1.8.0",
+    "morgan": "^1.10.0",
+    "pug": "^3.0.2"
+  },
+  "description": "pug server",
+  "main": "app.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sagajayakumar/wab92saga.git"
+  },
+  "keywords": [
+    "pug"
+  ],
+  "author": "Jaya Kumar Saga",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/sagajayakumar/wab92saga/issues"
+  },
+  "homepage": "https://github.com/sagajayakumar/wab92saga#readme"
+}
