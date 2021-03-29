@@ -2,7 +2,30 @@ extends layout
 
 block content
   h1= title
- 
-  
+  -
+    const cars = [
+      {
+      'Name': "Rogue",
+      'Company': "Nissan",
+      'Price':"$25750"
+      },
+      {
+      'Name': "Tahoe",
+      'Company': "Chevrolet",
+      'Price':"$49000"
+      },
+      {
+      'Name': "Santa Fe",
+      'Company': "Hyundai",
+      'Price':"$26850"
+      },
+      ]
+  .container-fluid
+    div 
+      each car in cars
+        .row
+        .row-name.col-sm-2= car.Name
+        .row-company.col-sm-2= car.Company
+        .row-price.col-sm-2= car.Price
   
 
