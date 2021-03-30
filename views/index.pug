@@ -4,9 +4,14 @@ block content
   h1= title
   p Welcome to #{title} Assignment 10
   button(type='button' class=`btn btn-secondary` onclick='update()') Press me
-  - var part = 0
-  - part += 1
+  div#target count will be displayed here
   - var url  = 'car';
   a(href='/' + url) cars
   
-
+  script.
+    var client_count = 0
+    function update(){
+      client_count++
+      console.log(client_count)
+      document.getElementById("target").innerHTML = "Value now " +client_count;
+    }
