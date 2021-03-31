@@ -20,12 +20,12 @@ block content
       'Price':"$26850"
       },
       ]
-  .container-fluid
-    div 
-      each car in cars
-        .row
-        .row-name.col-sm-2= car.Name
-        .row-company.col-sm-2= car.Company
-        .row-price.col-sm-2= car.Price
-  
-
+  div(class="container-fluid mt-3")
+  div(class="row")
+    each car,index in cars
+      div(class="col-sm-2 "  onclick=`buy(${index})`) #{car.Name} - #{car.Company} - #{car.Price} 
+  script.
+      function buy(itemNo)
+      {
+        alert(`You purchased Item ${itemNo+1}`)
+      }    
